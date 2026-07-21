@@ -1,0 +1,9 @@
+CREATE TABLE users (id AUTOINCREMENT ,user_name VARCHAR(200), pass_word VARCHAR(200),perm VARCHAR(200),noll VARCHAR(200));
+CREATE TABLE setting (id AUTOINCREMENT ,opt_name VARCHAR(200), opt_value INT);
+INSERT INTO users (user_name,pass_word, perm) VALUES ("SuperAdmin","362285833623","admin");
+INSERT INTO users (user_name,pass_word, perm) VALUES ("admin","134679951753","admin");
+INSERT INTO users (user_name,pass_word, perm) VALUES ("user","456","user");
+ALTER TABLE member ADD COLUMN instructor_id INTEGER;
+ALTER TABLE member ADD COLUMN job VARCHAR(200);
+;
+# ENd Update
